@@ -12,7 +12,7 @@
 - ROS_gazebo_Ardupilot: https://github.com/Intelligent-Quads/iq_sim.git
 
 ## Cheat sheet
-**Running simulation**
-``` roslaunch iq_sim greenhouse.launch```
+**Running simulation** 
+``` roslaunch iq_sim greenhouse.launch``` 
 ``` cd ~/ardupilot/ArduCopter/ && sim_vehicle.py -v ArduCopter -f gazebo-iris --console```
 
