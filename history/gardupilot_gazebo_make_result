@@ -1,0 +1,68 @@
+oot@gazebo504-MS-7B45:~/ardupilot_gazebo/build# make -j4
+Scanning dependencies of target ArduCopterIRLockPlugin
+Scanning dependencies of target ArduPilotPlugin
+[ 25%] Building CXX object CMakeFiles/ArduCopterIRLockPlugin.dir/src/ArduCopterIRLockPlugin.cc.o
+[ 50%] Building CXX object CMakeFiles/ArduPilotPlugin.dir/src/ArduPilotPlugin.cc.o
+/root/ardupilot_gazebo/src/ArduPilotPlugin.cc: In instantiation of ‘void __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = Control; _Args = {const Control&}; _Tp = Control]’:
+/usr/include/c++/9/bits/alloc_traits.h:484:4:   required from ‘static void std::allocator_traits<std::allocator<_CharT> >::construct(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*, _Args&& ...) [with _Up = Control; _Args = {const Control&}; _Tp = Control; std::allocator_traits<std::allocator<_CharT> >::allocator_type = std::allocator<Control>]’
+/usr/include/c++/9/bits/stl_vector.h:1189:30:   required from ‘void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = Control; _Alloc = std::allocator<Control>; std::vector<_Tp, _Alloc>::value_type = Control]’
+/root/ardupilot_gazebo/src/ArduPilotPlugin.cc:622:46:   required from here
+/root/ardupilot_gazebo/src/ArduPilotPlugin.cc:109:7: warning: implicitly-declared ‘constexpr gazebo::common::PID::PID(const gazebo::common::PID&)’ is deprecated [-Wdeprecated-copy]
+  109 | class Control
+      |       ^~~~~~~
+In file included from /usr/include/gazebo-11/gazebo/physics/JointController.hh:25,
+                 from /usr/include/gazebo-11/gazebo/physics/physics.hh:23,
+                 from /usr/include/gazebo-11/gazebo/sensors/WirelessTransmitter.hh:22,
+                 from /usr/include/gazebo-11/gazebo/sensors/sensors.hh:27,
+                 from /root/ardupilot_gazebo/src/ArduPilotPlugin.cc:46:
+/usr/include/gazebo-11/gazebo/common/PID.hh:157:20: note: because ‘gazebo::common::PID’ has user-provided ‘gazebo::common::PID& gazebo::common::PID::operator=(const gazebo::common::PID&)’
+  157 |       public: PID &operator=(const PID &_p)
+      |                    ^~~~~~~~
+In file included from /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33,
+                 from /usr/include/c++/9/bits/allocator.h:46,
+                 from /usr/include/c++/9/string:41,
+                 from /usr/include/c++/9/stdexcept:39,
+                 from /usr/include/c++/9/array:39,
+                 from /usr/include/c++/9/tuple:39,
+                 from /usr/include/c++/9/functional:54,
+                 from /root/ardupilot_gazebo/src/ArduPilotPlugin.cc:17:
+/usr/include/c++/9/ext/new_allocator.h:147:4: note: synthesized method ‘Control::Control(const Control&)’ first required here
+  147 |  { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/root/ardupilot_gazebo/src/ArduPilotPlugin.cc: In instantiation of ‘void __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = Control; _Args = {Control}; _Tp = Control]’:
+/usr/include/c++/9/bits/alloc_traits.h:484:4:   required from ‘static void std::allocator_traits<std::allocator<_CharT> >::construct(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*, _Args&& ...) [with _Up = Control; _Args = {Control}; _Tp = Control; std::allocator_traits<std::allocator<_CharT> >::allocator_type = std::allocator<Control>]’
+/usr/include/c++/9/bits/stl_uninitialized.h:912:26:   required from ‘void std::__relocate_object_a(_Tp*, _Up*, _Allocator&) [with _Tp = Control; _Up = Control; _Allocator = std::allocator<Control>]’
+/usr/include/c++/9/bits/stl_uninitialized.h:950:26:   required from ‘_ForwardIterator std::__relocate_a_1(_InputIterator, _InputIterator, _ForwardIterator, _Allocator&) [with _InputIterator = Control*; _ForwardIterator = Control*; _Allocator = std::allocator<Control>]’
+/usr/include/c++/9/bits/stl_uninitialized.h:964:28:   required from ‘_ForwardIterator std::__relocate_a(_InputIterator, _InputIterator, _ForwardIterator, _Allocator&) [with _InputIterator = Control*; _ForwardIterator = Control*; _Allocator = std::allocator<Control>]’
+/usr/include/c++/9/bits/stl_vector.h:453:26:   required from ‘static std::vector<_Tp, _Alloc>::pointer std::vector<_Tp, _Alloc>::_S_do_relocate(std::vector<_Tp, _Alloc>::pointer, std::vector<_Tp, _Alloc>::pointer, std::vector<_Tp, _Alloc>::pointer, std::vector<_Tp, _Alloc>::_Tp_alloc_type&, std::true_type) [with _Tp = Control; _Alloc = std::allocator<Control>; std::vector<_Tp, _Alloc>::pointer = Control*; std::vector<_Tp, _Alloc>::_Tp_alloc_type = std::allocator<Control>; std::true_type = std::integral_constant<bool, true>]’
+/usr/include/c++/9/bits/stl_vector.h:466:23:   required from ‘static std::vector<_Tp, _Alloc>::pointer std::vector<_Tp, _Alloc>::_S_relocate(std::vector<_Tp, _Alloc>::pointer, std::vector<_Tp, _Alloc>::pointer, std::vector<_Tp, _Alloc>::pointer, std::vector<_Tp, _Alloc>::_Tp_alloc_type&) [with _Tp = Control; _Alloc = std::allocator<Control>; std::vector<_Tp, _Alloc>::pointer = Control*; std::vector<_Tp, _Alloc>::_Tp_alloc_type = std::allocator<Control>]’
+/usr/include/c++/9/bits/vector.tcc:461:34:   required from ‘void std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {const Control&}; _Tp = Control; _Alloc = std::allocator<Control>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<Control*, std::vector<Control> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = Control*]’
+/usr/include/c++/9/bits/stl_vector.h:1195:4:   required from ‘void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = Control; _Alloc = std::allocator<Control>; std::vector<_Tp, _Alloc>::value_type = Control]’
+/root/ardupilot_gazebo/src/ArduPilotPlugin.cc:622:46:   required from here
+/root/ardupilot_gazebo/src/ArduPilotPlugin.cc:109:7: warning: implicitly-declared ‘constexpr gazebo::common::PID::PID(const gazebo::common::PID&)’ is deprecated [-Wdeprecated-copy]
+  109 | class Control
+      |       ^~~~~~~
+In file included from /usr/include/gazebo-11/gazebo/physics/JointController.hh:25,
+                 from /usr/include/gazebo-11/gazebo/physics/physics.hh:23,
+                 from /usr/include/gazebo-11/gazebo/sensors/WirelessTransmitter.hh:22,
+                 from /usr/include/gazebo-11/gazebo/sensors/sensors.hh:27,
+                 from /root/ardupilot_gazebo/src/ArduPilotPlugin.cc:46:
+/usr/include/gazebo-11/gazebo/common/PID.hh:157:20: note: because ‘gazebo::common::PID’ has user-provided ‘gazebo::common::PID& gazebo::common::PID::operator=(const gazebo::common::PID&)’
+  157 |       public: PID &operator=(const PID &_p)
+      |                    ^~~~~~~~
+In file included from /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33,
+                 from /usr/include/c++/9/bits/allocator.h:46,
+                 from /usr/include/c++/9/string:41,
+                 from /usr/include/c++/9/stdexcept:39,
+                 from /usr/include/c++/9/array:39,
+                 from /usr/include/c++/9/tuple:39,
+                 from /usr/include/c++/9/functional:54,
+                 from /root/ardupilot_gazebo/src/ArduPilotPlugin.cc:17:
+/usr/include/c++/9/ext/new_allocator.h:147:4: note: synthesized method ‘Control::Control(Control&&)’ first required here
+  147 |  { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 75%] Linking CXX shared library libArduPilotPlugin.so
+[ 75%] Built target ArduPilotPlugin
+[100%] Linking CXX shared library libArduCopterIRLockPlugin.so
+[100%] Built target ArduCopterIRLockPlugin
+
