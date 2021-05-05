@@ -38,3 +38,19 @@ catkin_make_isolated --install --use-ninja
 ```
 catkin build #cant use ninja cause catkin tool haven't supported it 
 ```
+
+result
+```
+[build] Found '11' packages in 0.0 seconds.
+Finished  <<< iq_sim                               [ 0.1 seconds ]
+Finished  <<< mavlink                              [ 0.9 seconds ]
+Finished  <<< mavros_msgs                          [ 1.2 seconds ]
+Finished  <<< libmavconn                           [ 0.1 seconds ]
+Finished  <<< mavros                               [ 0.8 seconds ]
+Finished  <<< cartographer_ros_msgs                [ 3.8 seconds ]
+Finished  <<< mavros_extras                        [ 2.5 seconds ]
+Finished  <<< test_mavros                          [ 0.3 seconds ]
+Finished  <<< cartographer                         [ 1 minute and 54.8 seconds ]
+Finished  <<< cartographer_ros                     [ 33.2 seconds ]
+Finished  <<< cartographer_rviz                    [ 16.6 seconds ]
+```
