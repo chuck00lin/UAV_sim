@@ -13,6 +13,14 @@
 
 ## Cheat sheet
 **Running simulation** 
-``` roslaunch iq_sim greenhouse.launch``` 
-``` cd ~/ardupilot/ArduCopter/ && sim_vehicle.py -v ArduCopter -f gazebo-iris --console```
+``` 
+roslaunch iq_sim greenhouse.launch 
+cd ~/ardupilot/ArduCopter/ && sim_vehicle.py -v ArduCopter -f gazebo-iris --console
+```
 
+## Used additional tools
+ROS topic visualize tool
+```
+sudo apt-get install ros-noetic-rqt
+sudo apt-get install ros-noetic-rqt-common-plugins
+```
