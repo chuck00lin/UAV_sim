@@ -10,6 +10,7 @@
 ## Package Used
 - Ardupilot_gazebo: https://github.com/khancyr/ardupilot_gazebo.git
 - ROS_gazebo_Ardupilot: https://github.com/Intelligent-Quads/iq_sim.git
+- Cartographer SLAM: https://github.com/cartographer-project/cartographer_ros
 
 ## Cheat sheet
 **Running simulation** 
