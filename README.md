@@ -13,6 +13,11 @@
 - Cartographer SLAM: https://github.com/cartographer-project/cartographer_ros
 
 ## Cheat sheet
+**source**
+cp to workspace
+```
+source devel/setup.bash
+```
 **Running simulation** 
 ``` 
 roslaunch iq_sim greenhouse.launch 
