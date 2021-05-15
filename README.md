@@ -1,7 +1,7 @@
 # UAV_sim
 
 ## Environment 
-- ubuntu 20.04 
+- clean ubuntu 20.04
 - Gazebo 11
 - ROS noetic full
 - Ardupilot Copter 4.1
@@ -23,10 +23,19 @@ source devel/setup.bash
 roslaunch iq_sim greenhouse.launch 
 cd ~/ardupilot/ArduCopter/ && sim_vehicle.py -v ArduCopter -f gazebo-iris --console
 ```
-
+**download from google drive**
+```
+#https://drive.google.com/file/d/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/view
+gdown --id 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+```
 ## Used additional tools
 ROS topic visualize tool
 ```
 sudo apt-get install ros-noetic-rqt
 sudo apt-get install ros-noetic-rqt-common-plugins
+```
+Python package
+```
+sudo apt install python3-pip
+pip install gdown
 ```
