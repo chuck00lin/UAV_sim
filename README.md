@@ -39,3 +39,10 @@ Python package
 sudo apt install python3-pip
 pip install gdown
 ```
+## Testing
+RTAB-MAP
+```
+sudo apt install ros-noetic-rtabmap-ros 
+roslaunch rtabmap_ros demo_robot_mapping.launch
+rosbag play --clock demo_mapping.bag  
+```
