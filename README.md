@@ -1,4 +1,5 @@
 # UAV_sim
+Most are scripts, with some code for UAV Gazebo simulation
 
 ## Environment 
 - clean ubuntu 20.04
