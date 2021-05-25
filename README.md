@@ -41,15 +41,15 @@ roslaunch uav_sim t1_field.launch
 - Add models  
   1) prepare meshes(STL,obj,dae)  
   2) create file structure for new model (id1_6x6 marker for example)
-     <modelname>(any name up to you)
-     ├── materials()
-     │   ├── scripts
-     │   │   └── <texturedescription>.material
-     │   └── textures
-     │       └── <texture>.png
+     <modelname>(any name up to you)  
+     ├── materials()  
+     │   ├── scripts  
+     │   │   └── <texturedescription>.material  
+     │   └── textures  
+     │       └── <texture>.png  
      ├── meshes(put <meshes>.STL/obj ,<modeldescription>.dae ) 
-     ├── model.config
-     └── model.sdf
+     ├── model.config  
+     └── model.sdf  
 - put models in your world and save :grin:
 
 ## Build
