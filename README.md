@@ -48,7 +48,7 @@ roslaunch uav_sim t1_field.launch
      │   └── textures  
      │       └── <texture>.png  
      ├── meshes(put <meshes>.STL/obj ,<modeldescription>.dae ) 
-     ├── model.config  
+     ├── model.config   
      └── model.sdf  
 - put models in your world and save :grin:
 
