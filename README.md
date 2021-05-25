@@ -29,6 +29,37 @@ cd ~/ardupilot/ArduCopter/ && sim_vehicle.py -v ArduCopter -f gazebo-iris --cons
 #https://drive.google.com/file/d/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/view
 gdown --id 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 ```
+**launch sim**
+```
+roslaunch uav_sim t1_field.launch
+```
+## Add new Sim
+- Create launch file  
+  cp and edit test.launch  
+- Create world  
+  cp and edit test.world  
+- Add models  
+  1) prepare meshes(STL,obj,dae)  
+  2) create file structure for new model (id1_6x6 marker for example)
+     <modelname>(any name up to you)
+     ├── materials()
+     │   ├── scripts
+     │   │   └── <texturedescription>.material
+     │   └── textures
+     │       └── <texture>.png
+     ├── meshes(put <meshes>.STL/obj ,<modeldescription>.dae ) 
+     ├── model.config
+     └── model.sdf
+- put models in your world and save :grin:
+
+## Build
+(change "catkin_ws" to your ros workspace)
+```
+echo "GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:$HOME/catkin_ws/src/uav_sim/models" >> ~/.bashrc 
+catkin build uav_sim
+source devel/setup.bash
+```
+
 ## Used additional tools
 ROS topic visualize tool
 ```
