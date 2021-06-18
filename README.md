@@ -1,5 +1,7 @@
 # UAV_sim
-Most are scripts, with some code for UAV Gazebo simulation
+Most are scripts, with some code for UAV Gazebo simulation   
+
+SITL_config: uav configration file, same with realworld configrations   
 
 ## Environment 
 - clean ubuntu 20.04
