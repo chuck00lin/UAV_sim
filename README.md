@@ -63,6 +63,11 @@ echo "GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:$HOME/catkin_ws/src/uav_sim/models"
 catkin build uav_sim
 source devel/setup.bash
 ```
+## SITL
+param load /home/gazebo504/catkin_ws/src/UAV_sim/SITL_config/gazebo-iris_sim.param  
+(restart SITL)   
+param show ARMING_CHECK*  
+param set ARMING_CHECK 60918 //disable gps check  
 
 ## Used additional tools
 ROS topic visualize tool
