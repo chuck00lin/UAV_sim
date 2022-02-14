@@ -1,0 +1,14 @@
+## First time install
+sudo usermod -a -G dialout $USER
+sudo apt-get remove modemmanager -y
+sudo apt install gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-gl -y
+
+- reboot  
+
+## download
+firfox https://s3-us-west-2.amazonaws.com/qgroundcontrol/latest/QGroundControl.AppImage
+
+- open ~/Downloads mv to Desktop
+
+chmod +x ./QGroundControl.AppImage
+./QGroundControl.AppImage  (or double click)

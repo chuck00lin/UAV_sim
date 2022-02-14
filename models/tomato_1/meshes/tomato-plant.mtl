@@ -1,0 +1,21 @@
+newmtl default_Mat
+illum 4
+kd 0.800000 0.800000 0.800000
+
+newmtl lambert2SG
+Ns 50.781250
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 0.00 0.00 0.00
+map_Kd albed02.png
+Ni 1.00
+
+newmtl lambert4SG
+Ns 50.781250
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 0.00 0.00 0.00
+map_Kd albedo2.png
+Ni 1.00

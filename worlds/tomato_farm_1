@@ -1228,14 +1228,120 @@
       <elevation>0</elevation>
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
-    <model name='t1_field'>
-      <pose>0.2061 0.524394 0 3.14 -0 0</pose>
-      <static>1</static>
+    <state world_name='default'>
+      <sim_time>364 583000000</sim_time>
+      <real_time>397 805272971</real_time>
+      <wall_time>1628564594 543446800</wall_time>
+      <iterations>239129</iterations>
+      <model name='ground_plane'>
+        <pose>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='iris'>
+        <pose>1.90685 -1.71735 -0.000211 -0.00018 -0.001046 0.054583</pose>
+        <scale>1 1 1</scale>
+        <link name='camera'>
+          <pose>1.92726 -1.72625 0.089827 2.36985 0.000179 1.62458</pose>
+          <velocity>-1e-06 2e-06 0 -2e-06 -6e-06 9e-06</velocity>
+          <acceleration>-6.9e-05 0.001262 -1e-06 0.01058 0.000548 0.015831</acceleration>
+          <wrench>-7e-06 0.000126 -0 0 -0 0</wrench>
+        </link>
+        <link name='hokuyo_link'>
+          <pose>1.90685 -1.71735 -0.000211 -0.00018 -0.001046 0.054583</pose>
+          <velocity>-0 -0 0 -1.3e-05 -7e-06 0</velocity>
+          <acceleration>1e-06 -9e-06 -0 1.3e-05 -2e-06 -2.1e-05</acceleration>
+          <wrench>0 -0 -0 0 -0 0</wrench>
+        </link>
+        <link name='iris_demo::gimbal_small_2d::base_link'>
+          <pose>1.90732 -1.72733 0.069791 1.56895 0.000179 1.62458</pose>
+          <velocity>-0 1e-06 0 -1.2e-05 -7e-06 3.6e-05</velocity>
+          <acceleration>0 -1.2e-05 -0 0.000991 6.4e-05 0.071722</acceleration>
+          <wrench>0 -2e-06 -0 0 -0 0</wrench>
+        </link>
+        <link name='iris_demo::gimbal_small_2d::tilt_link'>
+          <pose>1.92726 -1.72625 0.089827 3.13985 0.000179 1.62458</pose>
+          <velocity>-1e-06 2e-06 0 -2e-06 -6e-06 9e-06</velocity>
+          <acceleration>-6.9e-05 0.001262 -1e-06 0.01058 0.000548 0.015831</acceleration>
+          <wrench>-1e-06 1.3e-05 -0 0 -0 0</wrench>
+        </link>
+        <link name='iris_demo::iris::base_link'>
+          <pose>1.90665 -1.71733 0.194712 -0.00018 -0.001046 0.054583</pose>
+          <velocity>-1e-06 2e-06 0 -1.3e-05 -7e-06 0</velocity>
+          <acceleration>0 -9e-06 -0 4.5e-05 1e-06 -0</acceleration>
+          <wrench>0 -1.3e-05 -1e-06 0 -0 0</wrench>
+        </link>
+        <link name='iris_demo::iris::iris/ground_truth/odometry_sensorgt_link'>
+          <pose>1.90665 -1.71733 0.194712 -0.00018 -0.001046 0.054583</pose>
+          <velocity>-1e-06 2e-06 0 -1.3e-05 -7e-06 -2e-06</velocity>
+          <acceleration>0 -1.1e-05 -0 1.9e-05 -1e-06 -0.003501</acceleration>
+          <wrench>0 -2e-06 -0 0 -0 0</wrench>
+        </link>
+        <link name='iris_demo::iris::iris/imu_link'>
+          <pose>1.90665 -1.71733 0.194712 -0.00018 -0.001046 0.054583</pose>
+          <velocity>-1e-06 2e-06 0 -1.3e-05 -7e-06 -2e-06</velocity>
+          <acceleration>0 -1.1e-05 -0 1.9e-05 -1e-06 -0.003503</acceleration>
+          <wrench>0 -2e-06 -0 0 -0 0</wrench>
+        </link>
+        <link name='iris_demo::iris::rotor_0'>
+          <pose>2.04843 -1.9299 0.217887 -0.000635 -0.000851 0.526172</pose>
+          <velocity>-2e-06 3e-06 4e-06 -1.3e-05 -7e-06 0</velocity>
+          <acceleration>-1.2e-05 -1.9e-05 -4e-06 -1.6e-05 -1.4e-05 2e-06</acceleration>
+          <wrench>-0 -0 -0 0 -0 0</wrench>
+        </link>
+        <link name='iris_demo::iris::rotor_1'>
+          <pose>1.7659 -1.52472 0.21754 -0.000192 -0.001044 0.066619</pose>
+          <velocity>-2e-06 3e-06 -3e-06 -1.3e-05 -7e-06 0</velocity>
+          <acceleration>1.1e-05 -3e-06 3e-06 1.7e-05 -0 2e-06</acceleration>
+          <wrench>0 -0 0 0 -0 0</wrench>
+        </link>
+        <link name='iris_demo::iris::rotor_2'>
+          <pose>2.02443 -1.49056 0.217808 0.000521 0.000925 -2.74437</pose>
+          <velocity>-2e-06 3e-06 -2e-06 -1.3e-05 -7e-06 0</velocity>
+          <acceleration>1.3e-05 -1.7e-05 4e-06 -2e-06 -4e-06 2e-06</acceleration>
+          <wrench>0 -0 0 0 -0 0</wrench>
+        </link>
+        <link name='iris_demo::iris::rotor_3'>
+          <pose>1.78773 -1.92412 0.217612 0.00064 0.000847 -2.61037</pose>
+          <velocity>-2e-06 3e-06 2e-06 -1.3e-05 -7e-06 0</velocity>
+          <acceleration>-1.1e-05 -4e-06 -4e-06 -1.7e-05 -1.5e-05 2e-06</acceleration>
+          <wrench>-0 -0 -0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='tomato_farm'>
+        <pose>-37.5482 -4.11525 -0.000393 0.000736 0.000319 -0.002029</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-37.5482 -4.11525 -0.000393 0.000736 0.000319 -0.002029</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-3.76289 -1.13007 -10.7223 0.601849 -0.906603 -0.083949</acceleration>
+          <wrench>-3.76289 -1.13007 -10.7223 0 -0 0</wrench>
+        </link>
+      </model>
+      <light name='sun'>
+        <pose>0 0 10 0 -0 0</pose>
+      </light>
+    </state>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>0.086123 -3.46364 15.5211 -0 1.3898 1.87782</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+    <model name='tomato_farm'>
+      <pose>-37.5016 -4.108 0 0 -0 0</pose>
+      <static>0</static>
       <link name='link'>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://t1_field/meshes/t1_field.STL</uri>
+              <uri>model://tomatofarm/meshes/tomato_farm.STL</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -1256,127 +1362,27 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://t1_field/meshes/t1_field.STL</uri>
+              <uri>model://tomatofarm/meshes/tomato_farm.STL</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
-          <material>
-            <ambient>0.1 0.1 0.1 1</ambient>
-            <diffuse>0.8 0.8 0.8 1</diffuse>
-            <specular>0 0 0 0</specular>
-            <emissive>0 0 0 1</emissive>
-          </material>
         </visual>
         <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
     </model>
-    <state world_name='default'>
-      <sim_time>125 454000000</sim_time>
-      <real_time>206 395764745</real_time>
-      <wall_time>1623746001 179074874</wall_time>
-      <iterations>125454</iterations>
-      <model name='ground_plane'>
-        <pose>0 0 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>0 0 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='iris'>
-        <pose>0.089908 0.193525 1.5e-05 2.4e-05 0.000232 -0.000162</pose>
-        <scale>1 1 1</scale>
-        <link name='camera'>
-          <pose>0.109915 0.183504 0.090026 2.37121 -2.4e-05 1.56984</pose>
-          <velocity>1e-06 -0 -0 1.4e-05 7e-06 1.3e-05</velocity>
-          <acceleration>1e-06 0.002351 0 0.000448 0 0.025201</acceleration>
-          <wrench>0 0.000235 0 0 -0 0</wrench>
-        </link>
-        <link name='hokuyo_link'>
-          <pose>0.089908 0.193525 1.5e-05 2.4e-05 0.000232 -0.000162</pose>
-          <velocity>0 -0 0 1.4e-05 7e-06 -0</velocity>
-          <acceleration>-1e-06 -1.5e-05 0 6e-06 0 -2.8e-05</acceleration>
-          <wrench>-0 -0 0 0 -0 0</wrench>
-        </link>
-        <link name='iris_demo::gimbal_small_2d::base_link'>
-          <pose>0.089922 0.183523 0.070014 1.57023 -2.4e-05 1.56984</pose>
-          <velocity>0 -1e-06 0 1.4e-05 7e-06 5.6e-05</velocity>
-          <acceleration>-1e-06 -1.5e-05 0 0.000121 -4e-06 0.111966</acceleration>
-          <wrench>-0 -3e-06 0 0 -0 0</wrench>
-        </link>
-        <link name='iris_demo::gimbal_small_2d::tilt_link'>
-          <pose>0.109915 0.183504 0.090026 3.14121 -2.4e-05 1.56984</pose>
-          <velocity>1e-06 -0 -0 1.4e-05 7e-06 1.3e-05</velocity>
-          <acceleration>1e-06 0.002351 0 0.000448 0 0.025201</acceleration>
-          <wrench>0 2.4e-05 0 0 -0 0</wrench>
-        </link>
-        <link name='iris_demo::iris::base_link'>
-          <pose>0.089953 0.19352 0.194937 2.4e-05 0.000232 -0.000162</pose>
-          <velocity>1e-06 -3e-06 0 1.4e-05 7e-06 -0</velocity>
-          <acceleration>-1e-06 -1.1e-05 0 5.5e-05 -4e-06 0</acceleration>
-          <wrench>-1e-06 -1.6e-05 0 0 -0 0</wrench>
-        </link>
-        <link name='iris_demo::iris::iris/ground_truth/odometry_sensorgt_link'>
-          <pose>0.089953 0.19352 0.194937 2.4e-05 0.000232 -0.000162</pose>
-          <velocity>1e-06 -3e-06 0 1.4e-05 7e-06 2e-06</velocity>
-          <acceleration>-1e-06 -1.3e-05 0 1e-06 -1e-06 0.003616</acceleration>
-          <wrench>-0 -2e-06 0 0 -0 0</wrench>
-        </link>
-        <link name='iris_demo::iris::iris/imu_link'>
-          <pose>0.089953 0.19352 0.194937 2.4e-05 0.000232 -0.000162</pose>
-          <velocity>1e-06 -3e-06 0 1.4e-05 7e-06 2e-06</velocity>
-          <acceleration>-1e-06 -1.3e-05 0 1e-06 -1e-06 0.00363</acceleration>
-          <wrench>-0 -2e-06 0 0 -0 0</wrench>
-        </link>
-        <link name='iris_demo::iris::rotor_0'>
-          <pose>0.219923 -0.026501 0.217902 2.2e-05 0.000233 -0.01037</pose>
-          <velocity>2e-06 -3e-06 -4e-06 1.4e-05 7e-06 -0</velocity>
-          <acceleration>-1.9e-05 -2.4e-05 0 1e-06 -0 -1e-06</acceleration>
-          <wrench>-0 -1e-06 0 0 -0 0</wrench>
-        </link>
-        <link name='iris_demo::iris::rotor_1'>
-          <pose>-0.040009 0.393541 0.217973 3.6e-05 0.000231 0.051139</pose>
-          <velocity>2e-06 -3e-06 4e-06 1.4e-05 7e-06 -0</velocity>
-          <acceleration>1.5e-05 -3e-06 0 1e-06 -1e-06 -1e-06</acceleration>
-          <wrench>0 -0 0 0 -0 0</wrench>
-        </link>
-        <link name='iris_demo::iris::rotor_2'>
-          <pose>0.219994 0.413499 0.217913 3.7e-05 0.000231 0.055142</pose>
-          <velocity>2e-06 -3e-06 2e-06 1.4e-05 7e-06 -0</velocity>
-          <acceleration>1.7e-05 -2.4e-05 1e-06 0 -1e-06 -1e-06</acceleration>
-          <wrench>0 -1e-06 0 0 -0 0</wrench>
-        </link>
-        <link name='iris_demo::iris::rotor_3'>
-          <pose>-0.040074 -0.006459 0.217963 2.9e-05 0.000232 0.023183</pose>
-          <velocity>2e-06 -3e-06 -2e-06 1.4e-05 7e-06 -0</velocity>
-          <acceleration>-1.7e-05 -3e-06 0 0 -1e-06 -1e-06</acceleration>
-          <wrench>-0 -0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='t1_field'>
-        <pose>-0.705078 0.816786 0.983486 3.14 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>-0.705078 0.816786 0.983486 3.14 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <light name='sun'>
-        <pose>0 0 10 0 -0 0</pose>
-      </light>
-    </state>
-    <gui fullscreen='0'>
-      <camera name='user_camera'>
-        <pose>0.757051 4.42904 12.6612 0 1.15964 -1.65899</pose>
-        <view_controller>orbit</view_controller>
-        <projection_type>perspective</projection_type>
-      </camera>
-    </gui>
   </world>
 </sdf>
